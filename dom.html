@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Hello EveryOne</h1>
+
+    Enter the first value : <input type="text" id="first"><br><br>
+    Enter the second value : <input type="text" id="second">
+    <br><br>
+    <button onclick="getAdd()">Add</button>    <br><br>
+    <h3 id="result"></h3>
+</body>
+
+<script>
+    document.getElementById("demo").innerHTML = "Addition in JavaScript";
+    document.getElementById("demo").style.color = "red";
+
+
+    function getAdd(){
+        var first = document.getElementById("first").value;
+        var second = document.getElementById("second").value;
+        var result = parseInt(first) + parseInt(second);
+        document.getElementById("result").innerHTML = `Addition of two number is ${result}`;
+    }
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cookies and Session</h1>
+
+    <form name="myform">
+        Enter your name : <input type="text" name="customer">
+        <input type="button" value="Set Cookie" onclick="WriteCookie()">
+
+
+    </form>
+    <p>A Counter :</p>
+    <p id="result"></p>
+
+    <p><button onclick="clickCounter()" type="button">Count</button></p>
+
+    <script>
+          function WriteCookie(){
+            if(document.myform.customer.value == " "){
+                alert("Please enter some value");
+                return;
+          }
+          var cookievalue = escape(document.myform.customer.value)+";";
+          document.cookie = "name" + cookievalue;
+          document.write("Setting Cookie:" + "name =" + cookievalue);
+        }
+        function clickCounter(){
+            if(sessionStorage.clickcount){
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        }
+        else{
+            sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked this page " + sessionStorage.clickcount + " times";
+        }
+    </script>
+</body>
+</html>

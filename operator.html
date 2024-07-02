@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //arithmatic operator
+        // let varaible
+
+        let p= 10;
+          let q = 3;
+          let sum = p + q;
+          let difference = p - q;
+          let multiply = p * q;
+          let division = p / q;
+          let remainder = p % q;
+          document.write(`Sum: ${p} + ${q} = ${sum} <br>`);
+          document.write(`Difference: ${p} - ${q} = ${difference} <br>`);
+          document.write(`Multiply: ${p} * ${q} = ${multiply} <br>`);
+          document.write(`Division: ${p} / ${q} = ${division} <br>`);
+          document.write(`Remainder: ${p} % ${q} = ${remainder} <br><br>`);
+          document.write("------------------------<br>" )
+
+
+          //Comparison Operator
+
+          let r = 10;
+          let s = 5;
+          document.write(`${r} == ${s}: ` , r==s);
+          document.write(`${r} != ${s}: ` , r!=s);
+          document.write(`${r} === ${s}: ` , r===s);
+          document.write(`${r} !== ${s}: ` , r!==s);
+          document.write(`${r} > ${s}: ` , r>s);
+          document.write(`${r} < ${s}: ` , r<s);
+          document.write(`${r} >= ${s}: ` , r>=s);
+          document.write(`${r} <= ${s}: ` , r<=s);
+          document.write("<br>" )
+          
+          
+          //logical operator
+          let t = true;
+          let u = false;
+
+          document.write(`${t} && ${u}: ` , t&&u);
+          document.write(`${t} || ${u}: ` , t||u);
+          document.write(`$(t) && $(u): ` , t&&u);
+          
+          //ternary operator
+
+          let age = 18;
+          let message = (age > 18) ? "Yes,You can Vote" : "No, You cannot Vote";
+          document.write(message);
+    </script>
+</body>
+</html>
